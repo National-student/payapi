@@ -1,0 +1,266 @@
+*,
+h1,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  box-sizing: inherit;
+  height: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  /* width: 100%; */
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/dm-serif-display-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/public-sans-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* public-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/public-sans-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(225, 225, 225);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__item--link {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: left;
+  color: #36536b;
+}
+
+.header__link {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  letter-spacing: -0.11538461595773697px;
+  text-align: left;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+  background: #ba4270;
+  color: #fbfcfe;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+}
+
+.start {
+  padding-top: 120px;
+  background-color: rgb(225, 225, 225);
+}
+
+.start__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start__content {
+  width: 546px;
+}
+
+.start__title {
+  font-family: "DM Serif Display";
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -0.5538461804389954px;
+  text-align: left;
+  color: #36536b;
+  margin-bottom: 21px;
+}
+
+.start__input {
+  outline: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 27px;
+  padding-right: 200px;
+  box-shadow: 10px 10px 25px -10px #36536b40;
+  border: none;
+  border-radius: 20px;
+}
+
+.header__link--btn {
+  position: absolute;
+  right: 85px;
+}
+
+.start__text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.63px;
+  text-align: left;
+  color: #6c8294;
+}
+
+.start__text--span {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  text-align: left;
+}
+
+.company {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #1b262f;
+}
+
+.company__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company__content {
+  width: 445px;
+}
+
+.company__title {
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.3692307770252228px;
+  text-align: left;
+  color: #fbfcfe;
+  margin-bottom: 24px;
+}
+
+.company__text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #fbfcfe;
+  opacity: 70%;
+  margin-bottom: 32px;
+}
+
+.company__link {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17.63px;
+  letter-spacing: -0.11538461595773697px;
+  text-align: center;
+  color: #fbfcfe;
+  border: 1px solid #fbfcfe;
+  padding: 15px 32px;
+  border-radius: 25px;
+}
+
+.implement {
+  margin-top: 100px;
+}
+
+.implement__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.implement__content {
+  width: 445px;
+}
+
+.implement__title {
+  font-family: "DM Serif Display";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 56px;
+  letter-spacing: -0.3692307770252228px;
+  text-align: left;
+  color: #36536b;
+  margin-bottom: 24px;
+}
+
+.implement__text {
+  font-family: "Public Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #6c8294;
+}
+
+.implement__item:first-child {
+  padding-left: 100px;
+  padding-right: 200px;
+}
+
+.implement__item:last-child {
+    flex-direction: row-reverse;
+}
